@@ -1,0 +1,54 @@
+/* NumberPad.css */
+.number-pad-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent overlay background */
+    z-index: 1; /* Ensure the number pad appears on top of other content */
+  }
+  
+  .number-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .number-pad-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+  }
+  
+  .number-pad-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Style the "0" button */
+  button:last-child {
+    grid-column: span 3;
+  }
+  
+  .back-button, .enter-button {
+    flex: 1;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .back-button:hover, .enter-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  

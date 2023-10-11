@@ -1,0 +1,109 @@
+.border-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 140vh;
+  border: 5px solid #000000; /* Border with blue color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  background: linear-gradient(#94d1be, #daf0ee);
+}
+
+  path:nth-child(1) {
+    fill: none;
+    stroke: #cecece;
+    stroke-width: 13px;
+  }
+  
+  path:nth-child(2) {
+    fill: none;
+    stroke: #0063f7;
+    stroke-width: 13px;
+  }
+  
+  circle {
+    fill: black;
+    stroke: #9db5b2;
+    stroke-width: 5px;
+    r: 12px;
+  }
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+  }
+  
+  /* Additional styles to adjust the slider's size */
+  .circular-slider {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .volume-icon-container {
+    position: absolute;
+    align-items: center;
+    top: 150px; /* Adjust the top position as needed */
+    left: 150px; /* Adjust the left position as needed */
+    text-align: center; /* Center the icon horizontally */
+    font-size: 30px;
+    font-family: 'Young Serif', serif;
+  }
+  
+  .brightness-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Adjust to move the slider to the left */
+    width: 100%; /* Ensure it spans the entire width */
+    font-size: 30px;
+    font-family: 'Young Serif', serif;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+  }
+
+  .brightness-slider {
+    height: 400px; /* Adjust the width of the slider track to make it larger */
+    background-color: orange; /* Match the color with the volume slider */
+  }
+  
+  .temperature-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Adjust to move the slider to the left */
+    width: 100%; /* Ensure it spans the entire width */
+    font-size: 30px;
+    left: 900px;
+    bottom: 150px;
+    font-family: 'Young Serif', serif;
+  }
+
+  .brightness-icon {
+    margin-left: 50px;
+  }
+  
+  .temperature-slider {
+    width: 200px; /* Adjust the width as needed */
+    background-color: orange; /* Match the color with the volume slider */
+  }
+  
+  /* Additional styles to make the color consistent with the volume slider */
+  .temperature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Adjust the margin to position the icon */
+    color: rgb(0, 0, 0); /* Match the color with the volume slider */
+  }
+  
+  .temperature-percentage {
+    text-align: center;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: orange; /* Match the color with the volume slider */
+  }
+
+  

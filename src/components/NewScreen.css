@@ -1,0 +1,146 @@
+.border-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 140vh;
+  border: 5px solid #000000; /* Border with blue color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  background: linear-gradient(#274156, #1c6e8c);
+}
+
+.top-center-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px; /* Move the buttons down by 100 pixels */
+}
+
+.button {
+  width: 290px; /* Set a fixed width for the buttons */
+  height: 120px;
+  padding: 0; /* Corrected this line with a colon (:) */
+  margin: 0 170px;
+  font-size: 24px;
+  font-family: 'Young Serif', serif;
+  background-color: #9db5b2;
+  color: white;
+  border: 3px solid black; /* Add a black border with a 2px width */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0d2846;
+}
+
+.toggle-switches {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+  width: 60px; /* Adjust the width to make the switch shorter */
+  height: 33px; /* Adjust the height to control the thickness of the switch */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+input:checked + .slider {
+  background-color: #9db5b2;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.toggle-rows {
+  display: flex;
+  flex-direction: row; /* Display rows as columns */
+  justify-content: space-between; /* Spread out the columns */
+  margin-bottom: 50px; /* Create a 50px gap between rows */
+  width: 100%; /* Ensure each row fills the container width */
+  margin-top: 150px; /* Move the toggles down by 75px */
+  margin-left: 0px; /* Move the toggles to the right by 50px */
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center; /* Center the elements vertically within each row */
+  justify-content: center;
+  width: 48%; /* Adjust the width to control spacing between elements */
+}
+
+.toggle-label {
+  margin-right: 30px; /* Add spacing between the text and the toggle */
+}
+
+.switch-label {
+  font-size: 24px;
+  font-family: 'Young Serif', serif;
+}
+
+.settings-button-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.power-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+/* Choose a color for the button */
+  color: black;
+  border: none;
+  border-radius: 50%; /* Make it a circular button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.power-button:hover {
+  background-color: #ff0000; /* Change the color on hover */
+}
+
+.power-button i {
+  font-size: 24px;
+}

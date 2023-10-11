@@ -1,0 +1,20 @@
+/* src/components/SettingsButton.css */
+.settings-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px; /* Add margin to create spacing from the top and right edges */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .settings-button:hover {
+    background-color: #0056b3;
+  }
+  
