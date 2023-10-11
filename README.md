@@ -1,2 +1,2 @@
 # smartDesk
-smartDesk UI porject
+smartDesk UI project
