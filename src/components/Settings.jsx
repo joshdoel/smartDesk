@@ -78,7 +78,7 @@ function Settings() {
 
   return (
     <div className="border-container">
-      <h1 className="title">Settings</h1>
+      <h1 className="setting">Settings</h1>
       <div className="top-left-box"></div>
       <div className="back-arrow" onClick={goBack}></div>
       <div className="settings-item">
